@@ -2,8 +2,6 @@
 
 # WeRead Dashboard
 
-**Your WeChat Reading (微信读书) data in the browser: shelf · reading stats · highlights & notes · book details · recommendations**
-
 Runs locally · Zero third-party dependencies · API key never leaves the server · All data cached on your machine
 
 ![Node](https://img.shields.io/badge/node-%E2%89%A518-3c873a?logo=node.js&logoColor=white)

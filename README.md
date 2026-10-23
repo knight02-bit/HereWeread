@@ -2,8 +2,6 @@
 
 # 微信读书个人数据看板
 
-**把微信读书的阅读数据搬进浏览器：书架 · 阅读统计 · 笔记划线 · 书籍详情 · 发现推荐**
-
 本地运行 · 零第三方依赖 · API Key 只留在服务端 · 数据全部缓存在本机
 
 ![Node](https://img.shields.io/badge/node-%E2%89%A518-3c873a?logo=node.js&logoColor=white)
