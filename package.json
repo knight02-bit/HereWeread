@@ -1,0 +1,32 @@
+{
+  "name": "weread-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地运行的微信读书个人数据看板：书架、阅读统计、笔记与划线、书籍详情、发现推荐。零第三方依赖。",
+  "keywords": [
+    "weread",
+    "微信读书",
+    "dashboard",
+    "reading-stats",
+    "highlights",
+    "notes",
+    "export"
+  ],
+  "license": "MIT",
+  "author": "knight02-bit",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "snapshot": "node server/snapshot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knight02-bit/weread-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knight02-bit/weread-dashboard/issues"
+  },
+  "homepage": "https://github.com/knight02-bit/weread-dashboard#readme"
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>微信读书 · 个人数据看板</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="logo">读</span>
+          <div class="brand-text">
+            <strong>微信读书看板</strong>
+            <small id="brandSub">仅本机 · 127.0.0.1</small>
+          </div>
+        </div>
+
+        <nav id="nav" class="nav">
+          <a href="#/dashboard" data-view="dashboard"><i>◧</i>概览</a>
+          <a href="#/stats" data-view="stats"><i>◔</i>阅读统计</a>
+          <a href="#/shelf" data-view="shelf"><i>▤</i>书架</a>
+          <a href="#/notes" data-view="notes"><i>✎</i>笔记与划线</a>
+          <a href="#/discover" data-view="discover"><i>✦</i>发现</a>
+        </nav>
+
+        <div class="side-foot">
+          <button id="btnSync" class="btn block" type="button">同步全部笔记</button>
+          <div id="syncBox" class="sync-box" hidden></div>
+          <div class="side-actions">
+            <button id="btnTheme" class="btn ghost sm" type="button">切换主题</button>
+            <button id="btnClear" class="btn ghost sm" type="button">清空缓存</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="search-wrap">
+            <input id="globalSearch" type="search" placeholder="在已同步的划线 / 想法中搜索…" />
+            <button id="btnSearch" class="btn sm" type="button">搜索</button>
+          </div>
+          <div class="topbar-right">
+            <span id="statusPill" class="pill muted">连接中…</span>
+          </div>
+        </header>
+
+        <div id="banner" class="banner" hidden></div>
+        <section id="view" class="view">
+          <div class="empty">加载中…</div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" hidden></div>
+
+    <script src="util.js"></script>
+    <script src="api.js"></script>
+    <script src="charts.js"></script>
+    <script src="medal-icons.js"></script>
+    <script src="views/dashboard.js"></script>
+    <script src="views/stats.js"></script>
+    <script src="views/shelf.js"></script>
+    <script src="views/notes.js"></script>
+    <script src="views/book.js"></script>
+    <script src="views/discover.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
